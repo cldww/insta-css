@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@font-face {
+  font-family: 'Against';
+  src: url('https://dl.dropbox.com/s/2onkmj7ah8ylw30/against.ttf') format('truetype');
+}
+
+:root {
+  --vamp-bg: #0e0e0e;
+  --vamp-main: #6a1b1a;
+  --vamp-text: #d6d6d6;
+}
+
+.vamp-sig {
+  width: 280px;
+  background: var(--vamp-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'EB Garamond', serif;
+  color: var(--vamp-text);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+
+.vamp-img {
+  width: 100%;
+  height: 140px;
+  background: #000;
+  position: relative;
+}
+
+.vamp-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.vamp-img .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-family: 'Against', serif;
+  text-align: center;
+}
+
+.vamp-img:hover .overlay-text {
+  opacity: 1;
+}
+
+.vamp-bot {
+  padding: 10px 15px 5px 15px;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--vamp-text);
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.vamp-bot::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background: var(--vamp-main);
+  margin: 0 auto 8px auto;
+  border-radius: 2px;
+}
+
+.cldwht {
+  display: block;
+  text-align: center;
+  font-size: 8px;
+  margin-top: 6px;
+  color: #888;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.cldwht:hover {
+  color: var(--vamp-main);
+}
