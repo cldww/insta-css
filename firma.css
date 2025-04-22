@@ -1,4 +1,5 @@
-<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 @font-face {
   font-family: 'Against';
   src: url('https://dl.dropbox.com/s/2onkmj7ah8ylw30/against.ttf') format('truetype');
@@ -74,4 +75,3 @@
   margin: 0 auto 8px auto;
   border-radius: 2px;
 }
-</style>
