@@ -1,0 +1,68 @@
+/* Fuente personalizada */
+@font-face {
+    font-family: 'Against';
+    src: url('https://dl.dropbox.com/s/2onkmj7ah8ylw30/against.ttf') format('truetype');
+}
+
+/* Estilo para el contenedor de la tienda */
+.tienda {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la tabla */
+.tabla-tienda {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla-tienda th,
+.tabla-tienda td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #d6d6d6;
+    background: none;
+}
+
+/* Estilo para los encabezados de la tabla */
+.tabla-tienda th {
+    color: white;
+    font-size: 16px;
+    font-family: 'Against', sans-serif;
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla-tienda td {
+    font-size: 14px;
+}
+
+/* Estilo para el hover sobre las filas */
+.tabla-tienda tr:hover {
+    background-color: #6a1b1a40;
+}
+
+/* Estilo para la última celda */
+.tabla-tienda td:last-child {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffb3b3;
+}
+
+/* Estilo para las celdas y los encabezados sin borde */
+.tabla-tienda td,
+.tabla-tienda th {
+    border: none;
+}
+
+/* Estilo para la última celda con un color y peso de fuente específicos */
+.tabla-tienda td:last-child {
+    font-weight: 700;
+    color: #6a1b1a80;
+}
