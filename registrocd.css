@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Against';
+    src: url('https://dl.dropbox.com/s/2onkmj7ah8ylw30/against.ttf') format('truetype');
+}
+
+.empleo-registro {
+    font-family: 'Open Sans', sans-serif;
+    width: 500px;
+    max-width: 900%;
+    margin: auto;
+    background: #0a0b0b;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    color: #fff;
+}
+
+.empleo-registro [type="radio"] {
+    display: none;
+}
+
+.empleo-registro label {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 3px 4px 8px 0;
+    border-radius: 16px;
+    background: black;
+    color: #ccc;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.empleo-registro [type="radio"]:checked + label {
+    background: #6a1b1a;
+    color: #fff;
+}
+
+.categoria-contenido {
+    display: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: transparent;
+    margin-top: 8px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#cat1:checked ~ .contenedor-categorias #contenido1,
+#cat2:checked ~ .contenedor-categorias #contenido2,
+#cat3:checked ~ .contenedor-categorias #contenido3,
+#cat4:checked ~ .contenedor-categorias #contenido4,
+#cat5:checked ~ .contenedor-categorias #contenido5,
+#cat6:checked ~ .contenedor-categorias #contenido6,
+#cat7:checked ~ .contenedor-categorias #contenido7,
+#cat8:checked ~ .contenedor-categorias #contenido8 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.grupo-empleo {
+    background: transparent;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 13px;
+    color: inherit;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+}
+
+.grupo-empleo:hover {
+    background: #6a1b1a40;
+    /* color se mantiene igual para evitar errores */
+}
+
+.grupo-empleo b {
+    display: block;
+    color: #6a1b1a;
+    margin-bottom: 4px;
+    font-family: 'Against', sans-serif;
+    text-transform: none;
+    font-size: 16px;
+}
+
+.titulo-empleo {
+    font-family: 'Against', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-right: -10px;
+}
+
+.against-font {
+    font-family: 'Against', sans-serif;
+}
+
+.cldwht {
+    display: block;
+    text-align: center;
+    font-size: 8px;
+    margin-top: 6px;
+    color: #888;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.cldwht:hover {
+    color: var(--vamp-main);
+}
