@@ -1,20 +1,20 @@
 body {
   background: url('https://png.pngtree.com/background/20250116/original/pngtree-old-newspaper-newsprint-journalism-print-photo-picture-image_3091249.jpg') repeat;
   background-color: #2b1e12;
-  padding: 80px 20px;
+  padding: 20px;
   margin: 0;
 }
 
 .tablilla-periodico {
-  width: 700px;
+  width: 100px;
   max-width: 95%;
-  margin: 40px auto;
-  padding: 60px 50px;
+  margin: 20px auto;
+  padding: 30px 20px;
   background-color: #fdf8e3;
   color: #2a1f1a;
   font-family: 'Georgia', serif;
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
   border-radius: 0;
   z-index: 1;
@@ -30,7 +30,6 @@ body {
   background-repeat: repeat, no-repeat;
 }
 
-/* Bordes irregulares quemados */
 .tablilla-periodico::before {
   content: '';
   position: absolute;
@@ -46,7 +45,6 @@ body {
   opacity: 0.5;
 }
 
-/* Mancha o desgaste superpuesto */
 .tablilla-periodico::after {
   content: '';
   position: absolute;
@@ -58,7 +56,6 @@ body {
   mix-blend-mode: multiply;
 }
 
-/* Resto del estilo original */
 .titulo-principal {
   font-family: 'UnifrakturCook', cursive;
   text-align: center;
