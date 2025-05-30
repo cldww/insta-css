@@ -1,0 +1,140 @@
+/* Fondo grande general (envuelve la tablilla en HTML) */
+.fondo-grande {
+  background-image: url('https://png.pngtree.com/background/20250116/original/pngtree-old-newspaper-newsprint-journalism-print-photo-picture-image_3091249.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px 0; /* espacio arriba y abajo para que se note */
+  width: 550px; /* más ancha */
+  min-height: 100px; /* altura mínima para que no sea muy larga */
+}
+
+/* La tablilla - papel periódico con textura diferente */
+.tablilla-periodico {
+  width: 450px; /* más ancha */
+  margin: 30px auto;
+  padding: 20px 25px;
+  background-color: #fdf8e3;
+  color: #2a1f1a;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow:
+    0 0 60px rgba(0, 0, 0, 0.5),
+    inset 0 0 40px rgba(0, 0, 0, 0.25);
+  background-image: url('https://us.123rf.com/450wm/phokin/phokin1703/phokin170300237/75146106-textura-de-papel-reciclado-natural-papel-viejo-de-la-textura-del-peri%C3%B3dico-que-enmascara-la-alfombra.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden; /* sin scroll, oculta cualquier desborde */
+}
+
+
+
+/* Capa extra tipo pergamino superpuesta con pseudo-elemento */
+.tablilla-periodico::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: url('https://us.123rf.com/450wm/gelpi/gelpi2304/gelpi230401256/201942521-vieja-hoja-de-papel-pergamino-envejecida-ai-generativa.jpg?ver=6') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  pointer-events: none;
+  mix-blend-mode: darken;
+  z-index: 2;
+}
+
+/* Sombras suaves encima para dar profundidad */
+.tablilla-periodico::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0,0,0,0.2) 0%, transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(0,0,0,0.15) 0%, transparent 65%);
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 3;
+}
+
+/* Texto principal */
+.titulo-principal {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px #ddd;
+  position: relative;
+  z-index: 4;
+}
+
+/* Contenido con columnas */
+.contenido {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  z-index: 4;
+}
+
+.columna-izquierda {
+  flex: 2;
+}
+
+.columna-derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Títulos y bloques */
+.titulo-articulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+}
+
+.imagen-articulo {
+  margin: 15px 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.bloque-rojo {
+  background: #5c2e2e;
+  color: #f3e9d2;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}
+
+.bloque-claro {
+  background: #e0d3b3;
+  color: #2d1c0f;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+.pie {
+  text-align: right;
+  font-size: 13px;
+  color: #444;
+  margin-top: 30px;
+  border-top: 1px dashed #999;
+  padding-top: 10px;
+  font-style: italic;
+  position: relative;
+  z-index: 4;
+}
