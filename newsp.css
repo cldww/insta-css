@@ -1,5 +1,6 @@
 .tablilla-periodico {
-  max-width: 1024px;
+  max-width: 700px;
+  width: 90%;
   margin: 20px auto;
   padding: 40px;
   background: #f3e5c0 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
