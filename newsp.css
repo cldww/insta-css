@@ -1,0 +1,76 @@
+.tablilla-periodico {
+  max-width: 1024px;
+  margin: 20px auto;
+  padding: 40px;
+  background: #f3e5c0 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  border: 4px double #3b1e00;
+  font-family: 'Georgia', serif;
+  color: #2d1c0f;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  font-size: 16px;
+  line-height: 1.6;
+  background-size: cover;
+}
+
+.tablilla-periodico .titulo-principal {
+  font-family: 'UnifrakturCook', 'Georgia', serif;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.tablilla-periodico .contenido {
+  display: flex;
+  gap: 30px;
+}
+
+.tablilla-periodico .columna-izquierda {
+  flex: 2;
+}
+
+.tablilla-periodico .columna-derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tablilla-periodico .titulo-articulo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.tablilla-periodico .imagen-articulo {
+  background: #321610;
+  margin: 20px 0;
+  height: 180px;
+  text-align: center;
+  line-height: 180px;
+  color: #fff;
+}
+
+.tablilla-periodico .bloque-rojo {
+  background: #4a1e1e;
+  padding: 15px;
+  border: 2px solid #000;
+  color: #f3e5c0;
+}
+
+.tablilla-periodico .bloque-claro {
+  background: #e2d5b0;
+  padding: 15px;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.tablilla-periodico .pie {
+  margin-top: 30px;
+  border-top: 2px solid #000;
+  padding-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
